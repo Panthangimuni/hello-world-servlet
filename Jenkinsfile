@@ -12,11 +12,11 @@ stages {
 
       // Get some code from a GitHub repository
 
-      git 'https://github.com/raknas999/hello-world-servlet.git'
+      git 'https://github.com/panthangimuni/hello-world-servlet.git'
 
-      // Get the Maven tool.
+      // Get the maven tool.
      
- // ** NOTE: This 'M3' Maven tool must be configured
+ // ** NOTE: This 'maven-3.85' maven tool must be configured
  
      // **       in the global configuration.   
      }
