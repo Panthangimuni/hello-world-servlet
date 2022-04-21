@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     tools { 
-        maven 'maven' 
+        maven 'Maven' 
       
     }
 stages { 
@@ -12,11 +12,11 @@ stages {
 
       // Get some code from a GitHub repository
 
-      git 'https://github.com/panthangimuni/hello-world-servlet.git'
+      git 'https://github.com/raknas999/hello-world-servlet.git'
 
-      // Get the maven tool.
+      // Get the Maven tool.
      
- // ** NOTE: This 'maven-3.85' maven tool must be configured
+ // ** NOTE: This 'M3' Maven tool must be configured
  
      // **       in the global configuration.   
      }
@@ -24,7 +24,7 @@ stages {
 
    stage('Build') {
        steps {
-       // Run the maven build
+       // Run the Maven build
 
       //if (isUnix()) {
          sh 'mvn -Dmaven.test.failure.ignore=true install'
