@@ -65,4 +65,14 @@ stages {
       }
  }
 }
-
+     post {
+        success { mail to:"munirathnam204@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
+          
+        }
+        failure {mail to:"munirathnam204@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
+                 
+         }
+            
+        }
+    }       
+}
