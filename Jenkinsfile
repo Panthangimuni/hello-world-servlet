@@ -65,13 +65,4 @@ stages {
       }
  }
 }
-post {
-        success {
-          
-        }
-        failure {
-            
-        }
-    }       
-}
 
