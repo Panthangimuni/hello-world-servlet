@@ -66,10 +66,10 @@ stages {
  }
 }
      post {
-        success { mail to:"munirathnam204@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
+        success { mail to:"raknas999@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
           
         }
-        failure {mail to:"munirathnam204@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
+        failure {mail to:"raknas999@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
                  
          }
             
