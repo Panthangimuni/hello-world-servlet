@@ -72,7 +72,6 @@ stages {
 
       //  failure {mail to:"muni83430@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
                  
-         }
             
         }
     }       
