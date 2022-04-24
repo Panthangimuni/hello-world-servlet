@@ -65,14 +65,12 @@ stages {
       }
  }
 }
-    // post {
-    //    success { mail to:"muni83430@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
-          
+post {
+        success {
+            mail to:"muni83430@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
         }
-
-      //  failure {mail to:"muni83430@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
-                 
-            
+        failure {
+            mail to:"muni83430@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
         }
     }       
 }
